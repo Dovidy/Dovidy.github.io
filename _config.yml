@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (https://username.github.io) then use these settings:
-url: "https://imgeum.github.io"
+url: "https://koremp.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -66,7 +66,7 @@ footer-link-col: "#404040"
 author:
     name: Dokyun Lim
     email: "dovienkr@gmail.com"
-    github: imgeum
+    github: koremp
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
@@ -76,7 +76,7 @@ social-network-links:
     rss: true
     email: "dovienkr@gmail.com"
     #  facebook: facebook_account
-    github: https://github.com/imgeum
+    github: https://github.com/koremp
     #  twitter: daattali
     #  reddit: yourname
     #  google-plus: +DeanAttali
@@ -101,7 +101,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "imgeum.github.io" # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "koremp.github.io" # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
