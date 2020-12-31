@@ -1,7 +1,6 @@
 ---
 layout: page
-title: As Developer
-subtitle: 초보자
+title: 話花化花
 use-site-title: true
 ---
 
@@ -18,10 +17,10 @@ use-site-title: true
   // When the single page app is loaded further down in this file,
   // the correct url will be waiting in the browser's history for
   // the single page app to route accordingly.
-  (function(l) {
+  (function (l) {
     if (l.search) {
       var q = {};
-      l.search.slice(1).split('&').forEach(function(v) {
+      l.search.slice(1).split('&').forEach(function (v) {
         var a = v.split('=');
         q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
       });
@@ -41,13 +40,13 @@ use-site-title: true
   {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
+      <h2 class="post-title">{{ post.title }}</h2>
 
-	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h3>
-	  {% endif %}
+      {% if post.subtitle %}
+      <h3 class="post-subtitle">
+        {{ post.subtitle }}
+      </h3>
+      {% endif %}
     </a>
 
     <p class="post-meta">
@@ -66,7 +65,7 @@ use-site-title: true
         {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
         {% assign excerpt_word_count = post.excerpt | number_of_words %}
         {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
         {% endif %}
       </div>
     </div>
@@ -79,12 +78,12 @@ use-site-title: true
       <a href="{{ site.baseurl }}/tags#{{- tag -}}">{{- tag -}}</a>
       {% endfor %}
       {% else %}
-        {{ post.tags | join: ", " }}
+      {{ post.tags | join: ", " }}
       {% endif %}
     </div>
     {% endif %}
 
-   </article>
+  </article>
   {% endfor %}
 </div>
 
